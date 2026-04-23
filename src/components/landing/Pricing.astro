@@ -1,53 +1,52 @@
 ---
 import FigmaLogo from "@/components/assets/FigmaLogo.astro";
 import AstroLogo from "@/components/assets/AstroLogo.astro";
-import StripeLogo from "@/components/assets/StripeLogo.astro";
 import TailwindLogo from "@/components/assets/TailwindLogo.astro";
-import OrchestraLogo from "@/components/assets/OrchestraLogo.astro";
 
 const pricingTiers = [
   {
-    title: "Design + Dev",
-    price: "$1999",
-    note: "/monthly",
-    subnote: "USD + Local tax",
-    description:
-      "Ideal for startups requiring design and front-end development services.",
-    highlight: "Same as in Design plus:",
-    features: [
-      "Astro & Tailwind Code",
-      "Clean & accessible code",
-      "Essential SEO",
-      "Support & maintenance",
-    ],
-  },
-  {
     title: "Design",
-    price: "$1499",
-    note: "/monthly",
-    subnote: "USD + Local tax",
+    price: "From $300",
+    note: "",
+    subnote: "Project-based or retainer",
     description:
-      "Ideal for emerging businesses requiring continuous design assistance.",
-    highlight: "What you get:",
+      "Ideal for businesses needing a fresh brand identity or stunning UI/UX.",
+    highlight: "What's included:",
     features: [
-      "Design in Figma",
-      "1 request at the time",
-      "Unlimited feedback",
-      "Delivery within 2–3 days",
+      "Custom UI/UX Design",
+      "Brand Identity & Logos",
+      "Responsive Web Design",
+      "Unlimited Revisions",
     ],
   },
   {
-    title: "One off",
-    price: "$999",
+    title: "Development",
+    price: "From $500",
     note: "",
-    subnote: "USD + Local tax",
+    subnote: "Project-based or retainer",
     description:
-      "For anyone who only needs a quick landing page or just a quick redesign!",
-    highlight: "What you get:",
+      "For startups and agencies requiring robust, high-performance web development.",
+    highlight: "What's included:",
     features: [
-      "2–3 days turnaround time",
-      "Design or development",
-      "1 revision included",
+      "Full-stack Development",
+      "CMS Integrations",
+      "E-commerce Solutions",
+      "SEO-ready & Optimized",
+    ],
+  },
+  {
+    title: "Marketing",
+    price: "From $400",
+    note: "/monthly",
+    subnote: "Retainer-based",
+    description:
+      "Grow your audience and drive conversions with our data-driven marketing strategies.",
+    highlight: "What's included:",
+    features: [
+      "SEO & Content Strategy",
+      "Social Media Management",
+      "PPC Advertising",
+      "Monthly Reporting",
     ],
   },
 ];
@@ -76,28 +75,16 @@ const pricingTiers = [
         </div>
         <div>
           <div class="flex items-center gap-2 text-base-900">
-            <p class="text-xs">1 spots available</p>
-            <div class="h-2 w-2 rounded-full bg-black"></div>
-            <div class="h-2 w-2 rounded-full border border-black"></div>
+            <p class="text-xs">Available for new projects</p>
+            <div class="h-2 w-2 rounded-full bg-green-500"></div>
           </div>
           <div class="border-t border-base-200 flex flex-col pt-2 mt-2">
             <span class="text-xs text-base-600 font-normal">
-              Project management with <span
-                class="italic text-base-900 font-medium">Orchestra</span
-              >, secure payments with <span
-                class="italic text-base-900 font-medium">Stripe</span
-              > and the freedom of
+              Dedicated project management, secure online payments, and the freedom of
               <span class="italic text-base-900 font-medium">
-                Canceling your subscription anytime:</span
+                flexible engagements.</span
               >
             </span>
-            <div class="inline-flex items-center gap-2 mt-4 text-base-900">
-              <OrchestraLogo class="h-4 text-base-900" />
-              <span aria-hidden="true" class="text-base-900 pointer-events-none"
-                >/</span
-              >
-              <StripeLogo class="h-4 text-base-900" />
-            </div>
           </div>
         </div>
       </section>
@@ -136,9 +123,9 @@ const pricingTiers = [
             </div>
 
             <div class="mt-8">
-              <button class="rounded-full px-4 border py-2 text-sm font-semibold transition-all flex items-center justify-between bg-white text-base-900 h-10 border-base-200 focus:ring-2 shadow-base-500/5 focus:ring-blue-950 focus:ring-offset-2 ring-offset-base-200 hover:bg-black hover:text-white duration-300 w-full">
+              <a href="https://calendly.com/hello-vm6m/45min" target="_blank" rel="noopener noreferrer" class="rounded-full px-4 border py-2 text-sm font-semibold transition-all flex items-center justify-between bg-white text-base-900 h-10 border-base-200 focus:ring-2 shadow-base-500/5 focus:ring-blue-950 focus:ring-offset-2 ring-offset-base-200 hover:bg-black hover:text-white duration-300 w-full">
                 Get started <span>&rarr;</span>
-              </button>
+              </a>
             </div>
           </section>
         ))
@@ -150,30 +137,12 @@ const pricingTiers = [
         <p class="text-lg text-base-900 lg:text-xl">Good to know</p>
         <div class="mt-4">
           <p class="text-xs text-base-500 font-normal">
-            Microstudio focuses exclusively on design and front-end development.
-            The following services are not included:
-            <span class="text-base-900 italic font-medium">design systems</span
-            >,
-            <span class="text-base-900 italic font-medium">3D</span>,
-            <span class="text-base-900 italic font-medium">prototypes</span>,
-            <span class="text-base-900 italic font-medium">mobile apps</span>,
-            <span class="text-base-900 italic font-medium">illustrations</span>,
-            <span class="text-base-900 italic font-medium">CMS setups</span>,
-            <span class="text-base-900 italic font-medium">back-end work</span>,
-            <span class="text-base-900 italic font-medium">hosting</span>,
-            <span class="text-base-900 italic font-medium">marketing</span>,
-            <span class="text-base-900 italic font-medium">copywriting</span>,
-            <span class="text-base-900 italic font-medium">animations</span>,
-            and
-            <span class="text-base-900 italic font-medium"
-              >overly complex builds</span
-            >.
+            Buzz and Bee Digital provides comprehensive, end-to-end solutions. Since our team operates out of Bangladesh, we're able to offer highly competitive rates while maintaining world-class quality for international clients.
           </p>
 
           <div class="border-t border-base-200 flex flex-col pt-4 mt-4">
             <p class="text-xs text-base-400">
-              Minimal supports English, Spanish, Italian, and Swedish. Pick
-              what’s comfortable!
+              We operate globally and support clients across all time zones.
             </p>
           </div>
         </div>
@@ -186,11 +155,13 @@ const pricingTiers = [
           <h3 class="text-lg text-base-900 lg:text-xl">Book an intro call</h3>
           <p class="text-xs text-base-500 mt-4 text-balance">
             Not sure if it’s the right fit? Let’s talk. Book a quick intro call
-            and get a feel for how Minimal works.
+            and get a feel for how Buzz and Bee works.
           </p>
 
           <a
-            href="#_"
+            href="https://calendly.com/hello-vm6m/45min"
+            target="_blank"
+            rel="noopener noreferrer"
             class="text-sm text-base-900 hover:text-blue-500 mt-4 font-medium"
           >
             Book a call
