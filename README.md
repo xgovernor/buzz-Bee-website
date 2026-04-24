@@ -48,7 +48,7 @@ The codebase is organized as follows:
 
 ## 🌐 Deployment
 
-This site is optimized to be deployed as a static site to **Cloudflare Pages**. 
+This site is optimized to be deployed as a static site to **Cloudflare Pages**.
 
 ### Deploy via GitHub (Recommended)
 1. Push this repository to GitHub.
@@ -70,3 +70,4 @@ npx wrangler pages deploy dist
 
 ## 📧 Contact
 For support or inquiries, please contact [buzzandbee25@gmail.com](mailto:buzzandbee25@gmail.com).
+---
