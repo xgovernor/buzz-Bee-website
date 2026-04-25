@@ -3,6 +3,14 @@
 @plugin "@tailwindcss/typography";
 @plugin "tailwind-scrollbar-hide";
 
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist/webfonts/Geist[wght].woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-sans: Geist, sans-serif;
   --color-base-50: oklch(96.74% 0.001 286.38);

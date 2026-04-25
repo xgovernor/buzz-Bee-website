@@ -1,0 +1,66 @@
+{
+    "id": "/",
+    "name": "Buzz and Bee Digital",
+    "short_name": "Buzz & Bee",
+    "description": "Grow your business with Buzz and Bee Digital. We provide expert Design, Development, and Marketing services globally.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "display_override": [
+        "window-controls-overlay",
+        "minimal-ui",
+        "standalone"
+    ],
+    "orientation": "portrait-primary",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "dir": "auto",
+    "lang": "en-US",
+    "categories": [
+        "business",
+        "design",
+        "productivity"
+    ],
+    "icons": [
+        {
+            "src": "icon512_maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icon512_rounded.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "View Services",
+            "short_name": "Services",
+            "description": "Explore our Design, Development, and Marketing services",
+            "url": "/#services",
+            "icons": [
+                {
+                    "src": "icon512_rounded.png",
+                    "sizes": "512x512",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "View Pricing",
+            "short_name": "Pricing",
+            "description": "Check out our competitive packages",
+            "url": "/#pricing",
+            "icons": [
+                {
+                    "src": "icon512_rounded.png",
+                    "sizes": "512x512",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ]
+}

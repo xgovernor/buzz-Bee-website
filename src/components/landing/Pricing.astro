@@ -5,48 +5,48 @@ import TailwindLogo from "@/components/assets/TailwindLogo.astro";
 
 const pricingTiers = [
   {
-    title: "Design",
+    title: "Design & Branding",
     price: "From $300",
     note: "",
-    subnote: "Project-based or retainer",
+    subnote: "Fixed-price or retainer",
     description:
-      "Ideal for businesses needing a fresh brand identity or stunning UI/UX.",
-    highlight: "What's included:",
+      "For businesses needing a standout brand identity, a complete UI/UX redesign, or high-converting landing pages.",
+    highlight: "Core Deliverables:",
     features: [
-      "Custom UI/UX Design",
-      "Brand Identity & Logos",
-      "Responsive Web Design",
-      "Unlimited Revisions",
+      "Custom UI/UX Web Design",
+      "Brand Identity & Logo Systems",
+      "Interactive User Prototypes",
+      "Unlimited Design Revisions",
     ],
   },
   {
-    title: "Development",
+    title: "Web Engineering",
     price: "From $500",
     note: "",
-    subnote: "Project-based or retainer",
+    subnote: "Fixed-price or retainer",
     description:
-      "For startups and agencies requiring robust, high-performance web development.",
-    highlight: "What's included:",
+      "For startups and agencies requiring lightning-fast, secure, and highly scalable custom web applications.",
+    highlight: "Core Deliverables:",
     features: [
-      "Full-stack Development",
-      "CMS Integrations",
-      "E-commerce Solutions",
-      "SEO-ready & Optimized",
+      "Full-stack Web Applications",
+      "High-Performance Static Sites",
+      "E-commerce Integrations",
+      "Technical SEO Optimization",
     ],
   },
   {
-    title: "Marketing",
+    title: "Growth Marketing",
     price: "From $400",
-    note: "/monthly",
-    subnote: "Retainer-based",
+    note: "/mo",
+    subnote: "Monthly retainer",
     description:
-      "Grow your audience and drive conversions with our data-driven marketing strategies.",
-    highlight: "What's included:",
+      "For brands looking to aggressively scale their audience and drive measurable ROI through targeted campaigns.",
+    highlight: "Core Deliverables:",
     features: [
-      "SEO & Content Strategy",
-      "Social Media Management",
-      "PPC Advertising",
-      "Monthly Reporting",
+      "Search Engine Optimization (SEO)",
+      "Targeted PPC Campaigns",
+      "Data-Driven Content Strategy",
+      "Conversion Rate Optimization",
     ],
   },
 ];
@@ -67,20 +67,22 @@ const pricingTiers = [
             <TailwindLogo class="h-3 text-base-900" />
           </div>
           <p class="text-2xl tracking-tight font-medium text-base-900 mt-4">
-            Tailored design & <span class="md:block">dev packages</span>
+            Transparent, <span class="md:block">value-driven pricing</span>
           </p>
           <p class="text-xs text-base-500 mt-2">
-            Flexible pricing to enhance your online presence at every stage.
+            World-class digital solutions tailored exactly to your project's
+            scope and scale.
           </p>
         </div>
         <div>
           <div class="flex items-center gap-2 text-base-900">
-            <p class="text-xs">Available for new projects</p>
+            <p class="text-xs font-medium">Available for new projects</p>
             <div class="h-2 w-2 rounded-full bg-green-500"></div>
           </div>
           <div class="border-t border-base-200 flex flex-col pt-2 mt-2">
             <span class="text-xs text-base-600 font-normal">
-              Dedicated project management, secure online payments, and the freedom of
+              Dedicated project management, secure online payments, and the
+              freedom of
               <span class="italic text-base-900 font-medium">
                 flexible engagements.</span
               >
@@ -123,8 +125,11 @@ const pricingTiers = [
             </div>
 
             <div class="mt-8">
-              <a href="https://calendly.com/hello-vm6m/45min" target="_blank" rel="noopener noreferrer" class="rounded-full px-4 border py-2 text-sm font-semibold transition-all flex items-center justify-between bg-white text-base-900 h-10 border-base-200 focus:ring-2 shadow-base-500/5 focus:ring-blue-950 focus:ring-offset-2 ring-offset-base-200 hover:bg-black hover:text-white duration-300 w-full">
-                Get started <span>&rarr;</span>
+              <a
+                href="mailto:buzzandbee25@gmail.com"
+                class="rounded-full px-4 border py-2 text-sm font-semibold transition-all flex items-center justify-between bg-white text-base-900 h-10 border-base-200 focus:ring-2 shadow-base-500/5 focus:ring-blue-950 focus:ring-offset-2 ring-offset-base-200 hover:bg-black hover:text-white duration-300 w-full"
+              >
+                Email us <span>&rarr;</span>
               </a>
             </div>
           </section>
@@ -134,41 +139,48 @@ const pricingTiers = [
       <section
         class="h-full p-8 flex flex-col col-span-full md:col-span-1 xl:col-span-2 justify-between order-last md:order-none bg-white rounded-3xl"
       >
-        <p class="text-lg text-base-900 lg:text-xl">Good to know</p>
+        <p class="text-xl font-medium text-base-900">Good to know</p>
         <div class="mt-4">
           <p class="text-xs text-base-500 font-normal">
-            Buzz and Bee Digital provides comprehensive, end-to-end solutions. Since our team operates out of Bangladesh, we're able to offer highly competitive rates while maintaining world-class quality for international clients.
+            Buzz and Bee Digital provides comprehensive, end-to-end solutions.
+            Because our core engineering and design team operates out of
+            Bangladesh, we are uniquely positioned to offer highly competitive
+            pricing structures without ever compromising on world-class quality
+            for our international clients.
           </p>
 
-          <div class="border-t border-base-200 flex flex-col pt-4 mt-4">
-            <p class="text-xs text-base-400">
-              We operate globally and support clients across all time zones.
+          <div class="border-t border-base-200 flex flex-col pt-4 mt-6">
+            <p class="text-xs font-medium text-base-600">
+              🌍 We operate globally and support clients across all time zones.
             </p>
           </div>
         </div>
       </section>
 
       <section
-        class="h-full rounded-3xl justify-between col-span-full lg:col-span-1 xl:col-span-2 bg-white p-8"
+        class="h-full rounded-3xl justify-between col-span-full lg:col-span-1 xl:col-span-2 bg-base-900 text-white p-8"
       >
         <div class="flex flex-col justify-between h-full">
-          <h3 class="text-lg text-base-900 lg:text-xl">Book an intro call</h3>
-          <p class="text-xs text-base-500 mt-4 text-balance">
-            Not sure if it’s the right fit? Let’s talk. Book a quick intro call
-            and get a feel for how Buzz and Bee works.
+          <h3 class="text-xl font-medium text-white">
+            Have a specific project?
+          </h3>
+          <p class="text-xs text-base-300 mt-4 text-balance leading-relaxed">
+            Prefer to write things down? Send us an email with your project
+            details and requirements. Our technical lead will review your brief
+            and get back to you with a transparent, no-obligation estimate.
           </p>
 
           <a
-            href="https://calendly.com/hello-vm6m/45min"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-sm text-base-900 hover:text-blue-500 mt-4 font-medium"
+            href="mailto:buzzandbee25@gmail.com"
+            class="text-sm text-white hover:text-base-300 transition-colors mt-6 font-semibold"
           >
-            Book a call
+            buzzandbee25@gmail.com &rarr;
           </a>
 
-          <div class="border-t border-base-200 pt-4 mt-4">
-            <p class="text-xs text-base-400">(Europe/Helsinki) Time</p>
+          <div class="border-t border-base-700 pt-4 mt-6">
+            <p class="text-xs text-base-400">
+              Response time: Usually within 24 hours
+            </p>
           </div>
         </div>
       </section>

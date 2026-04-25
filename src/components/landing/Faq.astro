@@ -1,34 +1,48 @@
 ---
 const faqs = [
   {
-    question: "What services does Buzz and Bee Digital provide?",
+    question: "Who owns the website and code once the project is finished?",
     answer:
-      "We provide end-to-end digital solutions, specifically focusing on custom Design (UI/UX, branding), Development (web apps, static sites, eCommerce), and Digital Marketing (SEO, PPC, Social Media).",
+      "You do. Once the project is completed and fully paid for, you retain 100% ownership of your website, branding assets, and all associated code. We simply reserve the right to feature the work in our portfolio.",
   },
   {
-    question: "How do you determine the cost of a project?",
+    question: "Do I need to provide the website content, or do you handle copywriting?",
     answer:
-      "Every project is unique. Our development services start from $500, but the final cost depends on the project's scope, complexity, and timeline. After our initial meeting and research, we will provide you with a transparent estimate.",
+      "That's completely up to you! While some clients prefer to write their own content, we offer comprehensive Content Marketing and Copywriting services. We can write highly engaging, SEO-optimized copy for your entire site so you don't have to lift a finger.",
   },
   {
-    question: "What is your typical turnaround time?",
+    question: "Will my new website be mobile-friendly and optimized for Google (SEO)?",
     answer:
-      "For standard design and development tasks, we typically deliver initial concepts within 3-5 business days. Larger or more complex applications may take several weeks. We establish a clear timeline during the kickoff phase.",
+      "Absolutely. Every website we build is designed with a 'mobile-first' approach to ensure it looks stunning on all devices. We also bake technical SEO best practices into the core code to ensure you rank highly on Google from day one.",
   },
   {
-    question: "How do we communicate during a project?",
+    question: "How long does a typical web development or branding project take?",
     answer:
-      "We believe in transparent and continuous communication. We use tools like Slack, Email, and regular video calls (Google Meet/Zoom) to ensure you are always updated on our progress.",
+      "For a standard branding or web development project, our typical turnaround time is 2 to 6 weeks. However, highly complex custom applications or e-commerce platforms may take longer. We will provide a strict, transparent timeline during our initial kickoff meeting.",
   },
   {
-    question: "Do you work with international clients?",
+    question: "How do you measure the success of a social media or marketing campaign?",
     answer:
-      "Yes, absolutely! While our core team is based in Bangladesh, we successfully serve clients globally and easily accommodate different time zones to keep the project moving smoothly.",
+      "We don't guess; we use hard data. We establish Key Performance Indicators (KPIs) at the start of the campaign—such as conversion rates, lead generation, or website traffic—and provide you with transparent, regular reports detailing exactly how your investment is performing.",
   },
 ];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
 ---
 
-<section>
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+<section id="faq">
   <div class="px-8 py-12 max-w-xl mx-auto">
     <h2 class="text-4xl tracking-tight text-base-900 text-balance font-medium">
       The answers to the most <span class="block"
